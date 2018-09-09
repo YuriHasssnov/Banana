@@ -1,0 +1,35 @@
+<!--
+  Generated template for the UserdetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{user.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Name:</ion-label>
+      <ion-input type="text" name="name"  value={{user.name}}  [(ngModel)]="user.name" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Email:</ion-label>
+      <ion-input type="text" name="email" value={{user.email}} [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Username:</ion-label>
+      <ion-input type="text" name="username" value={{user.username}} [(ngModel)]="user.username"></ion-input>
+    </ion-item>
+    <!-- <ion-item>
+      <ion-label stacked>Password:</ion-label>
+      <ion-input type="password" name="password" value={{user.password}}></ion-input>
+    </ion-item> -->
+    <ion-item>
+      <button ion-button color="success" medium><ion-icon name="create" (click)="updateConfirm(user)"></ion-icon>Update</button>&nbsp;&nbsp;&nbsp;
+      <button ion-button color="danger" medium (click)="deleteConfirm(user)"><ion-icon name="trash"></ion-icon>&nbsp;Delete</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-content padding class="appBackground">
+  <ion-card>
+    <ion-card-header>
+      User Registration
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Name:</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.name" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Email:</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.email" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Username:</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.username" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Password:</ion-label>
+          <ion-input type="password" [(ngModel)]="userData.password" required></ion-input>
+        </ion-item>
+        <button ion-button block class="marginTop" (click)="signUp()">Signup</button>
+        <button ion-button block color="lightprimary" (click)="gotoHome()">Go to Home</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

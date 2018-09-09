@@ -1,0 +1,23 @@
+{
+  "name": "ionic-server",
+  "version": "1.0.0",
+  "description": "Server for Banana",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuri - 20180907",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.13",
+    "mongoose-paginate": "^5.0.3",
+    "path": "^0.12.7"
+  }
+}

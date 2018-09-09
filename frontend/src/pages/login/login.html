@@ -1,0 +1,21 @@
+<ion-content padding id="login">
+  <ion-card>
+    <ion-card-header>
+      User Login
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Email:</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.email" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Password:</ion-label>
+          <ion-input type="password" [(ngModel)]="userData.password" required></ion-input>
+        </ion-item>
+        <button ion-button block color="primary" (click)="login()">Login</button>
+        <button ion-button block color="lightprimary" (click)="gotoHome()">Go to Home</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
